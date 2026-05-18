@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Chess Openings Popularity</a>
+        <a href="data-card.html">About the dataset</a>
+    </nav>
+
+    <main>
+
+        <h1>Chess Openings Popularity</h1>
+        <h2>Background Information</h2>
+
+        <p>The dataset is a compilation of standard chess games played on Lichess,
+            a popular chess website, posted on the Lichess official database.
+            It contains over 7 billion rows, where each row represents a single chess game,
+            dating from January, 2013 to September, 2025.</p>
+
+        <p>I chose a random subset of 100000 chess games on December 28th, 2023 from 
+
+        <a href="https://huggingface.co/datasets/Lichess/standard-chess-games">HuggingFace.co</a>.</p>
+
+        <h2>Which openings are popular, accounting for rating?</h3>
+
+        <img src="openingDistribWhite.png" alt="Openings vs White's Rating" height="300">
+        <img src="openingDistribBlack.png" alt="Openings vs White's Rating" height="300">
+
+        <p>For players rated from below 500 to 900, King's Pawn Game is the most popular opening. For players rated 900 to 1600, Queen's Pawn Game is the most popular, and from 1600 upwards, the Sicilian is by far the most used.</p>
+
+        <p>Zooming in on higher-rated players, we see:</p>
+
+        <img src="openingDistribWhiteHigh.png" alt="Openings vs White's Rating (2200+)" height="300">
+        <img src="openingDistribBlackHigh.png" alt="Openings vs Black's Rating (2200+)" height="300">
+
+        <p>Although the Sicilian is the most popular opening throughout, its lead diminishes for very high rating. For example, the Queen's Pawn Game overtakes the Sicilian in popularity briefly around 2600-2800, and other openings follow closely. This suggests that higher rated players are more willing to play a variety of openings, since they probably studied more as well.</p>
+
+        <img src="openingsVsWhiteElo.png" alt="Popular Openings vs White's Rating">
+        <img src="openingsVsBlackElo.png" alt="Popular Openings vs Black's Rating">
+
+        <p>However, if we focus on the rating distribution for the top 13 popular openings, we can see that the Ruy Lopez is actually played significantly by 3000+ rated players.</p>
+
+        <h2>Key Takeaways</h2>
+
+        <p>The King's Pawn Game is the most popular opening for low rated players.</p>
+        <p>The Queen's Pawn Game is the most popular for the average chess player, and the Sicilian is by far the most popular for above average chess players.</p>
+        <p>For very high rated players though, at 2800+ online, a variety of openings are played.</p>
+
+    </main>
+
+</body>
+</html>
