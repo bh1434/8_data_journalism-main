@@ -46,3 +46,7 @@ main img {
     height: 325px;
     transition: height 1.5s;
 }
+
+main a {
+    color: var(--bluepurple)
+}
