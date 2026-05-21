@@ -31,7 +31,6 @@ nav a {
 
 h1 {
     justify-self: center;
-    color: var(--darkbrown);
     font-style: normal;
 }
 
@@ -57,12 +56,4 @@ main img {
 
 main a {
     color: var(--bluepurple);
-}
-
-.opening { /*https://www.w3schools.com/html/html_classes.asp*/
-    color: var(--darkbrown);
-}
-
-.opening:hover span{
-    display:block;
 }
