@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-image: url("chess_bg.png") /*https://www.w3schools.com/cssref/pr_background-image.php*/;
     background-blend-mode: lighten;
+    background-color: #A3C3Ae;
 }
 
 nav {
@@ -31,11 +32,17 @@ nav a {
 h1 {
     justify-self: center;
     color: var(--darkbrown);
+    font-style: normal;
+}
+
+h2 {
+    font-style: normal;
 }
 
 main {
     padding:20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
 }
 
 main img:hover {
@@ -57,5 +64,5 @@ main a {
 }
 
 .opening:hover span{
-    display:block
+    display:block;
 }
